@@ -3,7 +3,7 @@ import { IResolverObject } from "graphql-tools";
 import { StarWarsDataSource } from "./Datasources/StarWarsDataSource";
 import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config(); //For env
 
 const typeDefs = gql`
   type Person {
