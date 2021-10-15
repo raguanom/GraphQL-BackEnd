@@ -3,7 +3,7 @@ import { RESTDataSource } from "apollo-datasource-rest";
 export class StarWarsDataSource extends RESTDataSource {
   constructor() {
     super();
-    this.baseURL = "https://swapi.dev";
+    this.baseURL = process.env.DATASOURCE_API;
   }
 
   async getAllPeople(pageNumber: number) {
