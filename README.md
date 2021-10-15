@@ -2,4 +2,4 @@
 
 Run server using yarn start
 
-build with node typescript and graphql
+built with node typescript and graphql
