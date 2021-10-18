@@ -22,10 +22,10 @@ const typeDefs = gql`
 
 const resolvers: IResolverObject = {
   Query: {
-    people: (_, { pageNumber }, { dataSources }) => {
+    people: (_ : any, { pageNumber } : { pageNumber: number }, { dataSources }: { dataSources: any }) => {
         return dataSources.starWarsAPI.getAllPeople(pageNumber);
     },
-    person: (_, { personName }, { dataSources })=>{
+    person: (_ : any, { personName } : { personName: string }, { dataSources }: { dataSources: any })=>{
         return dataSources.starWarsAPI.getPersonByName(personName);
     }
   }
