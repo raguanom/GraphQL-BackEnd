@@ -13,7 +13,7 @@
     "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;"
   },
   "engines": {
-    "node": "14.17.1",
+    "node": "14.18.0",
     "npm": "8.0.0"
   },
   "keywords": [],
